@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Bootstrap demo</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body style="background-color: #d0dab7;">
+      <nav class="navbar" style="background-color: #35393e;">
+          <div class="container-fluid">
+              <span class="fw-bold">#JUNTOSSOMOSMAISFORTES<span class="fs-6" style="color: #aa773e;"> | SITE OFICIAL</span></span>
+              <nav class="navbar">
+                  <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-dark" type="submit">Search</button>
+                    </form>
+                  </div>
+              </nav>
+          </div>
+      </nav>
+      <nav class="navbar" style="background-color: #495563;">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+          <div class="col-4">
+              <a class="navbar-brand" href="#">
+                <img src="imagens/logomarca/logo.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
+              </a>
+          </div>
+          <div class="col-4">
+            <ul class="nav">
+              <li class="nav-item">
+                  <a class="nav-link text-white" href="index.html">Home</a>
+              </li>
+            
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="text-white">Serviços</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item hover:bg-" href="base.html">Treinamento Individual</a></li>
+                  <li><a class="dropdown-item" href="criancas.html">Treinamento para Crianças</a></li>
+                  <li><a class="dropdown-item" href="adultos.html">Treinamento para Adultos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Super Camp</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contato.html">Contato</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link text-white" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="equipe.html">Equipe</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <div class="align-items-end">
+              <a href="https://web.whatsapp.com/49988921859"><i class='bx bxl-whatsapp fs-4 text-dark'></i></a>
+              <i class='bx bxl-linkedin-square fs-4'></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <br>
+  
+      <div class="container text-center my-5">
+        <h1 class="fw-bold" style="color: #aa773e;" id="sobre">SOBRE NÓS</h1>
+        <hr>
+        <p class="fw-light">
+            Ajudar aspirantes a jogadores a alcançarem seu pleno potencial por meio de um treinamento de alta qualidade.
+            A "Imortal FBPA" foi fundada por ex-jogadores e treinadores experientes que entendem 
+            a importância da técnica, disciplina e paixão no esporte.
+            <span><a class="link-opacity-100" href="equipe.html">Clique aqui e veja a equipe completa.</a></span>
+        </p>  
+    </div>
+
+    <!-- Carrossel -->
+    <div id="carouselExample" class="carousel slide mb-5">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagens/carrosel/football-trainer.jpg" class="d-block w-100 opacity-75" style="height: 400px; object-fit: cover;" alt="Treinamento para Crianças">
+                <div class="carousel-caption d-none d-md-block mb-5">
+                    <h2 class="fw-bold text-dark">Treinamento para Crianças</h2>
+                    <p class="text-dark">Programas de desenvolvimento de habilidades para jogadores jovens, <br> com foco em técnica, trabalho em equipe.</p>
+                    <button class="btn btn-success rounded-pill"><a href="criancas.html" class="text-white text-decoration-none">Saiba Mais</a></button>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/carrosel/individual.jpg" class="d-block w-100 opacity-75" style="height: 400px; object-fit: cover;" alt="Treinamento Individual">
+                <div class="carousel-caption d-none d-md-block mb-5">
+                  <h2 class="fw-bold text-dark">Treinamento Individual</h2>
+                  <p class="text-dark">Sessões personalizadas focadas no desenvolvimento de habilidades específicas.</p>
+                  <button class="btn btn-success rounded-pill"><a href="base.html" class="text-white text-decoration-none">Saiba Mais</a></button>
+
+              </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/carrosel/coach.jpeg" class="d-block w-100 opacity-75" style="height: 400px; object-fit: cover;" alt="Conheça nossa Equipe">
+                <div class="carousel-caption d-none d-md-block mb-5">
+                  <h2 class="fw-bold text-dark">Conheça nossa Equipe</h2>
+                  <p class="text-dark">Conheça todos os integrantes que vão auxiliar você, e sua equipe durante todo o treinamento.</p>
+                  <button class="btn btn-success rounded-pill"><a href="equipe.html" class="text-white text-decoration-none">Saiba Mais</a></button>
+              </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Seção Super Camp -->
+    <div class="container my-5">
+        <hr>
+        <h1 class="fw-bold text-center" style="color: #aa773e;">SUPER CAMP DE
+           <span style="color: rgb(233, 129, 146);">F</span>
+           <span style="color: blue;">E</span>
+           <span style="color: yellow;">R</span>
+           <span style="color: red;">I</span>
+           <span style="color: green;">A</span>
+           <span style="color: rgb(233, 129, 146);">S</span>
+        </h1>
+        <hr>
+        <p class="text-dark text-center fw-bold mb-3">
+            Ei, fãs de futebol, preparem-se para o camp de férias mais épico de todos os tempos! É isso mesmo, o nosso super camp de futebol está chegando e promete ser um espetáculo digno dos melhores estádios do mundo!
+        </p>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+            <!-- Imagem -->
+            <img src="imagens/icone/campo.webp" alt="Ícone de campo de futebol" class="img-fluid mb-3">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+            <div class="ratio ratio-16x9 mb-3">
+              <iframe src="https://www.youtube.com/embed/q60vQmk6KdE" title="YouTube video" allowfullscreen></iframe>
+
+            </div>
+            <button type="button" class="btn btn-success rounded-pill fw-semibold p-2">
+              QUERO PARTICIPAR DO CAMP DE FÉRIAS
+          </button>
+          </div>
+        </div>
+        <p class="text-dark text-center fw-bold mb-3">
+            Imagina só: você vai treinar com os melhores técnicos, aperfeiçoar suas habilidades, aprender dribles incríveis e marcar gols de placa! Teremos campeonatos emocionantes, desafios de pênaltis e competições de embaixadinhas, tudo com muita diversão e espírito de equipe!
+        </p>
+        <hr>
+    </div>
+      
+    <!-- Seção Serviços -->
+    <div class="container text-center my-5">
+        <h1 class="fw-bold" style="color: #aa773e;">SERVIÇOS</h1>
+        <hr>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100">
+              <img src="imagens/serviços/imagem 4.jpg" class="card-img-top" alt="Treinamento Individualizado">
+              <div class="card-body">
+                <h5 class="card-title">Treinamento Individualizado</h5>
+                <p class="card-text">Aulas particulares focadas em melhorar aspectos específicos do jogo, como finalização, drible ou defesa.</p>
+                <a href="https://www.youtube.com/watch?v=t8ZQDTKOB1s" class="btn btn-danger"><i class='bx bxl-youtube'></i> Veja Mais</a>
+                <a href="base.html" class="btn btn-primary"><i class='bx bxs-shopping-bag'></i> Selecionar Serviço</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100">
+              <img src="imagens/serviços/imagem 2.jpg" class="card-img-top" alt="Treinamento para Crianças">
+              <div class="card-body">
+                <h5 class="card-title">Treinamento para Crianças</h5>
+                <p class="card-text">Programas de desenvolvimento de habilidades para jogadores jovens, com foco em técnica, trabalho em equipe.</p>
+                <a href="https://www.youtube.com/watch?v=grqjY2ns9L4" class="btn btn-danger"><i class='bx bxl-youtube'></i> Veja Mais</a>
+                <a href="criancas.html" class="btn btn-primary"><i class='bx bxs-shopping-bag'></i> Selecionar Serviço</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card h-100">
+              <img src="imagens/serviços/imagem 3.jpg" class="card-img-top" alt="Treinamento para Adultos">
+              <div class="card-body">
+                <h5 class="card-title">Treinamento para Adultos</h5>
+                <p class="card-text">Sessões adaptadas para adultos que querem melhorar suas habilidades, sejam iniciantes ou jogadores experientes.</p>
+                <a href="https://www.youtube.com/watch?v=QCJQucMNZW4" class="btn btn-danger"><i class='bx bxl-youtube'></i> Veja Mais</a>
+                <a href="adultos.html" class="btn btn-primary"><i class='bx bxs-shopping-bag'></i> Selecionar Serviço</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+    </div>
+
+    <!-- Seção Vídeo -->
+    <div class="container my-5">
+        <div class="ratio ratio-16x9 mb-3">
+          <iframe src="https://www.youtube.com/embed/9KFV8lPwi2Y" title="YouTube video" allowfullscreen></iframe>
+
+        </div>
+    </div>
+
+    <!-- Seção Depoimentos -->
+    <div class="container my-5">
+        <h1 class="fw-bold text-center" style="color: #aa773e;">DEPOIMENTOS</h1>
+        <hr>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                  <img src="imagens/depoimentos/pessoa1.jpg" class="card-img-top" alt="Foto de Roberto Silva">
+                  <div class="card-body">
+                      <blockquote class="blockquote mb-0">
+                          <p>"Minha filha sempre foi apaixonada por futebol,
+                             mas nunca encontrou um ambiente acolhedor
+                              e profissional para se desenvolver até
+                               conhecermos a Imortal FBPA. Em poucos meses,
+                                já vemos uma grande evolução nas suas habilidades e,
+                                 mais importante, no seu entusiasmo pelo esporte.
+                                 "</p>
+                          <footer class="blockquote-footer">Juliana Mendes <cite title="Source Title">15 de março de 2024</cite></footer>
+                      </blockquote>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="imagens/depoimentos/pessoa3.jpg" class="card-img-top" alt="Foto de Roberto Silva">
+                  <div class="card-body">
+                      <blockquote class="blockquote mb-0">
+                          <p>"O treinamento personalizado oferecido pela Imortal FBPA fez toda a diferença para nosso time.
+                             A dedicação dos treinadores e a metodologia aplicada elevaram o nível da equipe,
+                              nos ajudando a alcançar o título que tanto sonhávamos. Recomendo de olhos fechados."</p>
+                          <footer class="blockquote-footer">Carlos Henrique, Técnico do Colégio Alfa <cite title="Source Title">10 de dezembro de 2023</cite></footer>
+                      </blockquote>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                  <img src="imagens/depoimentos/pessoa2.jpg" class="card-img-top" alt="Foto de Roberto Silva">
+                  <div class="card-body">
+                      <blockquote class="blockquote mb-0">
+                          <p>"Participar do camp de férias da Imortal FBPA foi uma experiência inesquecível para meu filho. Ele voltou para casa mais confiante e com novas habilidades que ele está ansioso para aplicar no próximo campeonato. A estrutura e organização do camp foram impecáveis, e ele já está contando os dias para o próximo."</p>
+                          <footer class="blockquote-footer">Roberto Silva <cite title="Source Title">5 de janeiro de 2024</cite></footer>
+                      </blockquote>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+          <p class="mb-0">© 2024 - Desenvolvido por Arthur Gabriel Rocha</p>
+      </div>
+    </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

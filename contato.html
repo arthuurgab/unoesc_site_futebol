@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Bootstrap demo</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+      <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      
+    </head>
+    <body style="background-color: #d0dab7;">
+      <nav class="navbar" style="background-color: #35393e;">
+          <div class="container-fluid">
+              <span class="fw-bold">#JUNTOSSOMOSMAISFORTES<span class="fs-6" style="color: #aa773e;"> | SITE OFICIAL</span></span>
+              <nav class="navbar">
+                  <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-dark" type="submit">Search</button>
+                    </form>
+                  </div>
+              </nav>
+          </div>
+      </nav>
+      <nav class="navbar" style="background-color: #495563;">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+          <div class="col-4">
+              <a class="navbar-brand" href="#">
+                <img src="imagens/logomarca/logo.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
+              </a>
+          </div>
+          <div class="col-4">
+            <ul class="nav">
+              <li class="nav-item">
+                  <a class="nav-link text-white" href="index.html">Home</a>
+              </li>
+            
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="text-white">Serviços</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item hover:bg-" href="base.html">Treinamento Individual</a></li>
+                  <li><a class="dropdown-item" href="criancas.html">Treinamento para Crianças</a></li>
+                  <li><a class="dropdown-item" href="adultos.html">Treinamento para Adultos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Super Camp</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contato.html">Contato</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link text-white" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="equipe.html">Equipe</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <div class="align-items-end">
+            <a href="https://web.whatsapp.com/49988921859"><i class='bx bxl-whatsapp fs-4 text-dark'></i></a>
+              <i class='bx bxl-linkedin-square fs-4' ></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <div class="container contact-container">
+        <h1 class="fw-bold text-center" style="color: #aa773e;" id="sobre">FALE CONOSCO</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-6 left-column">
+              <div class="row">
+                <div id="map" style="height: 500px; width: 100%;"></div>
+                <br>
+            </div>
+            <br>
+            <button type="button" class="btn btn-success justify-content-start"><i class='bx bx-check'></i> Agendar Teste</button>
+            <button type="button" class="btn btn-primary justify-content-start"><i class='bx bxs-briefcase-alt-2'></i> Faça Parte da Equipe</button>
+            <hr>
+            <p>"Desde a sua fundação, a nossa escola de futebol tem sido um pilar na formação
+                 de jovens talentos e na promoção dos valores fundamentais do esporte.
+                  Criada com a visão de oferecer uma formação completa e de qualidade,
+                   nossa escola se dedica a ensinar não apenas habilidades técnicas,
+                    mas também a importância de valores como disciplina, respeito e trabalho em equipe." <span class="fst-italic">- ROCHA, Arthur - 29 Agosto de 2024</span></p>
+            <h3 class="fw-bold">Endereço</h3>
+            <p>
+                <i class='bx bx-map'></i> <strong>Rua dos Gremistas, 123</strong><br>
+                <i class='bx bx-building-house'></i> Bairro Farrapos<br>
+                <i class='bx bx-mail-send'></i> CEP 12345-678<br>
+                <i class='bx bx-building-house'></i> Porto Alegre, RS
+            </p>    
+        </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome completo do responsável</label>
+                    <input type="text" class="form-control" id="nome">
+                </div>
+                <div class="mb-3">
+                  <input type="checkbox"> Sou maior de 18 anos.
+                </div>
+                <div class="mb-3">
+                    <label for="nome-aluno" class="form-label">Nome completo do aluno</label>
+                    <input type="text" class="form-control" id="nome-aluno">
+                </div>
+                <div class="mb-3">
+                    <label for="data-nascimento" class="form-label">Data de nascimento</label>
+                    <input type="date" class="form-control" id="data-nascimento">
+                </div>
+                <div class="mb-3">
+                    <label for="whatsapp" class="form-label">WhatsApp para contato</label>
+                    <input type="tel" class="form-control" id="whatsapp">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" rows="4" placeholder="Inclua suas dúvidas, preocupações e/ou informações importantes sobre o seu filho"></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning btn-block"><i class='bx bx-support'></i> Solicitar contato</button>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">© 2024 - Desenvolvido por Arthur Gabriel Rocha</p>
+        </div>
+      </footer>
+    </body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</html>
+<script>
+    var map = L.map('map').setView([-29.9885, -51.1865], 15);  // Coordenadas aproximadas do bairro Farrapos
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([-29.9885, -51.1865]).addTo(map)  // Coordenadas aproximadas do bairro Farrapos
+      .bindPopup('Bairro Farrapos, Porto Alegre')
+      .openPopup();
+</script>
